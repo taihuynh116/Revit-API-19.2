@@ -36,20 +36,10 @@
     </Reference>
     <Reference Include="RevitAPI">
       <HintPath>..\..\DLL\RevitAPI.dll</HintPath>
-<<<<<<< HEAD
       <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPIUI">
       <HintPath>..\..\DLL\RevitAPIUI.dll</HintPath>
-      <Private>False</Private>
-=======
-    </Reference>
-    <Reference Include="RevitAPIUI">
-      <HintPath>..\..\DLL\RevitAPIUI.dll</HintPath>
-    </Reference>
-    <Reference Include="RevitData">
-      <HintPath>..\..\DLL\RevitData.dll</HintPath>
->>>>>>> 7193a22953e4905968dc42323874bda95f90c95b
     </Reference>
     <Reference Include="RevitData">
       <HintPath>..\..\DLL\RevitData.dll</HintPath>
@@ -64,13 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="Command\Command.cs" />
-    <Compile Include="GenericSelectionFilter.cs" />
-=======
     <Compile Include="Class1.cs" />
     <Compile Include="Model\Rebar.cs" />
->>>>>>> 7193a22953e4905968dc42323874bda95f90c95b
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utiltiy\EqualUtil.cs" />
     <Compile Include="Utiltiy\GeomUtil.cs" />

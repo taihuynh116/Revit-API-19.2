@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MEP_Intersect
+namespace Model.Entity
 {
-    public class Class1
+    public class Element
     {
 
     }

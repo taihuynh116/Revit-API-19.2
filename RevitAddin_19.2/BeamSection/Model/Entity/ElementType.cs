@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BeamSection
+namespace Model.Entity
 {
-    public class Class1
+    public enum ElementType
     {
+        Floor,Wall,Column,Framing,Undefined
     }
 }

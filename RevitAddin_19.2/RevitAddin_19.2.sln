@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MEP_Intersect", "MEP_Intersect\MEP_Intersect.csproj", "{E2AB3344-878C-4977-95CA-661DFC0A2D2C}"
 EndProject
@@ -18,10 +18,10 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E2AB3344-878C-4977-95CA-661DFC0A2D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2AB3344-878C-4977-95CA-661DFC0A2D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2AB3344-878C-4977-95CA-661DFC0A2D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2AB3344-878C-4977-95CA-661DFC0A2D2C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6FE8E073-3B84-48B4-8457-5D7BDF2F45B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE8E073-3B84-48B4-8457-5D7BDF2F45B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FE8E073-3B84-48B4-8457-5D7BDF2F45B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FE8E073-3B84-48B4-8457-5D7BDF2F45B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9323E4F3-E032-437E-91FD-52550A3F1864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

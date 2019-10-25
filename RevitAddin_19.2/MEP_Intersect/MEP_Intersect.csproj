@@ -57,7 +57,10 @@
     <Compile Include="Model\Entity\Element.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Single\MEPData.cs" />
+    <Compile Include="Utility\BoundingBoxUtil.cs" />
+    <Compile Include="Utility\ElementUtil.cs" />
     <Compile Include="Utility\GenericSelectionFilter.cs" />
+    <Compile Include="Utility\SolidUtil.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,12 +12,12 @@ namespace Model.Entity
         public Autodesk.Revit.DB.Element RevitElement { get; set; }
 
 
-        private List<Element> instersectElements;
-        public List<Element> InstersectElements
+        private IEnumerable<Element> instersectElements;
+        public IEnumerable<Element> InstersectElements
         {
             get
             {
-                //if (instersectElements == null) instersectElements = this.GetIntersectEntityElements();
+                if (instersectElements == null) instersectElements = this.GetIntersectEntityElements();
                 return instersectElements;
             }
         }

@@ -1,0 +1,75 @@
+﻿<Window x:Class="Model.Form.InputForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Model.Form"
+             mc:Ignorable="d" 
+             Title="MEP Clash Check" Height="350" Width="700" ResizeMode="CanResize">
+    <Border Padding="1">
+        <StackPanel Orientation="Vertical">
+            <GroupBox Header="Input" HorizontalAlignment="Stretch" Margin="0 5 0 0">
+                <StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal" Margin="0 5 0 0" DataContext="{Binding ElementView.Element.Identify}">
+                            <Label Content="Name :"></Label>
+                            <TextBox Text="{Binding Name}" Margin="10 0 0 0" Width="160" HorizontalContentAlignment="Right" VerticalAlignment="Center" 
+                                     IsReadOnly="True"></TextBox>
+                            <Label Content="Type :"></Label>
+                            <TextBox Text="{Binding Type}" Margin="10 0 0 0" Width="120" HorizontalContentAlignment="Right" VerticalAlignment="Center" 
+                                     IsReadOnly="True"></TextBox>
+                            <Label Content="Level :"></Label>
+                            <TextBox Text="{Binding Level}" Margin="10 0 0 0" Width="90" HorizontalContentAlignment="Right" VerticalAlignment="Center" 
+                                     IsReadOnly="True"></TextBox>
+                            <Button Content="Pick Element" Width="80" Margin="10 0 0 0" Background="LawnGreen" Click="Button_PickElement" VerticalAlignment="Center" ></Button>
+                        </StackPanel>
+                        <Grid Margin="0 5 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.75*"/>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="0 0 0 0" Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="Current Service :"></Label>
+                                    <ComboBox Margin="5 0 0 0" Width="170" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Center"
+                                  ItemsSource="{Binding ElementTypes}" SelectedItem="Element.ElementType"></ComboBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="Tolerance :" Margin="0 0 0 0"></Label>
+                                    <TextBox x:Name="txtNum" Margin="35,0,0,0" Width="45" Text="10" VerticalAlignment="Center"/>
+                                    <Button Content="Show Clash" Width="80" Margin="45 0 0 0" Background="LightBlue" VerticalAlignment="Center" Click="Button_ShowClash"></Button>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Orientation="Vertical">
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="Check With :"></Label>
+                                    <CheckBox Content="Duct" VerticalAlignment="Center" Margin="5 0 0 0" IsChecked="{Binding Duct}"></CheckBox>
+                                    <CheckBox Content="Pipe" VerticalAlignment="Center" Margin="10 0 0 0" IsChecked="{Binding Pipe}"></CheckBox>
+                                    <CheckBox Content="CableTray" VerticalAlignment="Center" Margin="10 0 0 0" IsChecked="{Binding CableTray}"></CheckBox>
+                                    <CheckBox Content="Equipment" VerticalAlignment="Center" Margin="10 0 0 0" IsChecked="{Binding Equipment}"></CheckBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Content="Model Link :"></Label>
+                                    <CheckBox Content="Duct" VerticalAlignment="Center" Margin="6 0 0 0" IsChecked="{Binding Duct}"></CheckBox>
+                                    <CheckBox Content="Pipe" VerticalAlignment="Center" Margin="10 0 0 0" IsChecked="{Binding Pipe}"></CheckBox>
+                                    <CheckBox Content="CableTray" VerticalAlignment="Center" Margin="10 0 0 0" IsChecked="{Binding CableTray}"></CheckBox>
+                                    <CheckBox Content="Structure" VerticalAlignment="Center" Margin="10 0 0 0" IsChecked="{Binding Structure}"></CheckBox>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <DataGrid HorizontalAlignment="Left" VerticalAlignment="Top" AlternatingRowBackground = "LightBlue" AutoGenerateColumns = "False" Margin="3 3 3 3"
+                      Width="682" Height="180" ItemsSource="{Binding ElementViews}" CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header = "NO." IsReadOnly="True" Binding = "{Binding Number}" />
+                    <DataGridTextColumn Header = "ID" IsReadOnly="True" Binding = "{Binding Element.Identify.Id}" />
+                    <DataGridCheckBoxColumn Header = "FAMILY NAME" IsReadOnly="True" Binding = "{Binding Element.Identify.Name}"/>
+                    <DataGridCheckBoxColumn Header = "LEVEL" IsReadOnly="True" Binding = "{Binding Element.Identify.Level}"/>
+                    <DataGridTextColumn Header = "DESCRIPTIONS" IsReadOnly="False"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Border>
+</Window>

@@ -1,0 +1,5 @@
+D:\03. Revit API\03. Template\GitHub\Revit-API-19.2\RevitAddin_19.2\BeamSection\bin\Debug\BeamSection.dll
+D:\03. Revit API\03. Template\GitHub\Revit-API-19.2\RevitAddin_19.2\BeamSection\bin\Debug\BeamSection.pdb
+D:\03. Revit API\03. Template\GitHub\Revit-API-19.2\RevitAddin_19.2\BeamSection\obj\Debug\BeamSection.csprojResolveAssemblyReference.cache
+D:\03. Revit API\03. Template\GitHub\Revit-API-19.2\RevitAddin_19.2\BeamSection\obj\Debug\BeamSection.dll
+D:\03. Revit API\03. Template\GitHub\Revit-API-19.2\RevitAddin_19.2\BeamSection\obj\Debug\BeamSection.pdb

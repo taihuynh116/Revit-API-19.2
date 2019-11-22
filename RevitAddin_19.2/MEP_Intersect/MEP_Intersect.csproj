@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="Model\ViewModel\ElementView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Single\FormData.cs" />
     <Compile Include="Single\MEPData.cs" />
     <Compile Include="Single\ModelData.cs" />
@@ -85,6 +86,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+=======
+    <Compile Include="Single\ModelData.cs" />
+    <Compile Include="Single\MEPData.cs" />
+    <Compile Include="Utility\BoundingBoxUtil.cs" />
+    <Compile Include="Utility\ElementUtil.cs" />
+    <Compile Include="Utility\GenericSelectionFilter.cs" />
+    <Compile Include="Utility\SolidUtil.cs" />
+>>>>>>> a83d5df3a889ba4aaee4e9fa82b4f67c346ff260
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
